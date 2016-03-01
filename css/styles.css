@@ -1,20 +1,31 @@
 
 body {
-  background-color: black;
-}
-
-/*.wrapper {
   display: flex;
   justify-content: center;
-  max-width: 92%
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  width: 94%;
   margin: auto 0;
-  border: 2px solid pink;
-}*/
+  /*min-width: 421px;*/
+  /*border: 2px solid orange;*/
+}
 
 
 nav {
   color: white;
-  height: 400px;
+  height: 200px;
+}
+
+nav a {
+  color: white;
+}
+
+nav a:hover {
+  font-weight: bold;
 }
 
 .product-filter {
@@ -25,6 +36,11 @@ nav {
   /*border: 1px solid orange;*/
 }
 
+.top-left {
+  text-decoration: underline;
+  font-size: 22px;
+  text-align: center;
+}
 
 .home, .forums, .image-add, .login {
   display: flex;
@@ -46,4 +62,134 @@ nav {
 img {
   align-items: center;
   padding: 0 5px;
+}
+
+.sort {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.collection-sort {
+  /*display: flex;*/
+  /*margin: 12px 12px;*/
+  /*border: 2px solid mistyrose;*/
+  flex: 1;
+}
+
+.collection-sort label {
+  color: white;
+}
+
+
+.gallery-scroll {
+  margin-top: 15px;
+}
+
+.gallery-scroll ul {
+  display: flex;
+  align-items: space-around;
+  padding: 0;
+  margin:0;
+
+}
+
+.gallery-scroll li {
+  flex: 1;
+  list-style: none;
+  border: 1px solid white;
+  text-align: center;
+  padding: 5px;
+}
+
+#text {
+  border: 1px solid white;
+  text-align: center;
+  border: none:
+  padding: 0 2px;
+  flex: 4;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.gallery-cover {
+  border-top: 1px solid #d9d9d9;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 10px;
+  flex: 1;
+}
+
+.gallery-cover img {
+  margin-top: 10px;
+  max-width: 100%;
+}
+
+.gallery-cover h5{
+  color: #b3b300;
+}
+
+@media screen and (max-width: 420px){
+  .sort {
+    flex-direction: column;
+  }
+
+  .collection-sort {
+    padding: 10px 0;
+  }
+}
+
+@media screen and (min-width: 680px) {
+
+      .gallery, nav, .sort {
+        flex-direction: row;
+        max-width: 90%;
+        margin: 0 auto;
+      }
+
+      .wrapper {
+        width: 96%
+        margin: 0 auto;
+      }
+
+      .gallery {
+        flex-direction: row;
+      }
+      .gallery-cover {
+        flex: 2 46%;
+      }
+      .sort {
+        margin-bottom: 15px;
+      }
+      .top-left {
+        flex: 1 100%;
+      }
+      .gallery-scroll {
+        flex: 1 100%;
+      }
+       .product-filter {
+         flex-direction: row;
+         flex-wrap: wrap;
+          }
+
+       .logo {
+         flex: 1 100%;
+         text-align: center;
+       }
+}
+
+@media screen and (min-width: 947px) {
+  .gallery, nav, .sort {
+    max-width: 75%;
+    margin: 0 auto;
+  }
+
+  .gallery-cover {
+    flex: 1 33%;
+  }
+
 }
