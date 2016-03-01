@@ -1,0 +1,49 @@
+
+body {
+  background-color: black;
+}
+
+/*.wrapper {
+  display: flex;
+  justify-content: center;
+  max-width: 92%
+  margin: auto 0;
+  border: 2px solid pink;
+}*/
+
+
+nav {
+  color: white;
+  height: 400px;
+}
+
+.product-filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*border: 1px solid orange;*/
+}
+
+
+.home, .forums, .image-add, .login {
+  display: flex;
+  flex: 1;
+  align-items: flex-start;
+}
+
+
+/*.home, .forums, .image-add, .login {
+  display: flex;
+  flex: 1;
+  align-items: flex-start; this stop images from stretching
+}*/
+
+.home,
+.forums,
+.image-add,
+.login,
+img {
+  align-items: center;
+  padding: 0 5px;
+}
