@@ -4,7 +4,7 @@ body {
   justify-content: center;
   background-color: black;
   color: white;
-  font-family: sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .wrapper {
@@ -17,7 +17,7 @@ body {
 
 nav {
   color: white;
-  height: 200px;
+  height: 250px;
 }
 
 nav a {
@@ -27,7 +27,10 @@ nav a {
 nav a:hover {
   font-weight: bold;
 }
-
+.forums img {
+  height: 30px;
+  width: 30px;
+}
 .product-filter {
   display: flex;
   flex-direction: column;
@@ -46,6 +49,7 @@ nav a:hover {
   display: flex;
   flex: 1;
   align-items: flex-start;
+  margin: 10px 0;
 }
 
 
@@ -65,12 +69,15 @@ img {
 }
 
 .sort {
+  margin-top: 10px;
+  border-top: 1px solid #d9d9d9;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .collection-sort {
+  margin-top: 5px;
   /*display: flex;*/
   /*margin: 12px 12px;*/
   /*border: 2px solid mistyrose;*/
@@ -116,6 +123,7 @@ img {
   flex-wrap: wrap;
 }
 
+
 .gallery-cover {
   border-top: 1px solid #d9d9d9;
   align-items: center;
@@ -147,8 +155,9 @@ img {
 
       .gallery, nav, .sort {
         flex-direction: row;
-        max-width: 90%;
+        max-width: 92%;
         margin: 0 auto;
+        align-items: center;
       }
 
       .wrapper {
@@ -167,6 +176,7 @@ img {
       }
       .top-left {
         flex: 1 100%;
+
       }
       .gallery-scroll {
         flex: 1 100%;
@@ -180,16 +190,28 @@ img {
          flex: 1 100%;
          text-align: center;
        }
+
+       .sort {
+         border: none;
+       }
 }
 
 @media screen and (min-width: 947px) {
   .gallery, nav, .sort {
-    max-width: 75%;
+    max-width: 80%;
     margin: 0 auto;
   }
 
   .gallery-cover {
     flex: 1 33%;
+  }
+
+  .sort {
+    border: none;
+  }
+
+  .top-left {
+    margin-top: 15px;
   }
 
 }
